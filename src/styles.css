@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.custom-button {
+    background-color: #516EFF;
+    color: white !important;
+    border: none; 
+    padding: 9px 25px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .custom-button:hover {
+    background-color: #3B4CAC; 
+  }
+  
+
+  .container{
+    margin-left: auto; 
+  margin-right: auto; 
+  max-width: 1200px;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  }

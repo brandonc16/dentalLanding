@@ -1,0 +1,47 @@
+.container-info{
+    display: flex;
+    margin-bottom: 60px;
+}
+.content{
+    margin-top: 60px;
+}
+.title{
+    font-size: 52px;
+}
+.dental{
+   color: #ffd700;
+}
+.subtitle{
+    font-size: 19px;
+    color: #777777 !important;
+}
+.image{
+    margin-left: 18px;
+}
+.get-started{
+    margin-top: 80px;
+}
+
+.custom-get-started{
+    background-color: #516EFF;
+  color: white !important;
+  border: none;
+  padding: 13px 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+
+.custom-learn {
+    margin-left: 40px; 
+    background-color: white;
+    color: black;
+    border: 1px solid #52525b; 
+    padding: 13px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  
