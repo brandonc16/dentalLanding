@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { DentalServiceComponent } from '../dental-service/dental-service.component';
+import { AboutUsComponent } from '../about-us/about-us.component';
+import { RegisterComponent } from '../register/register.component';
+
 
 const routes: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
-  declarations: [HomeComponent , DentalServiceComponent],
+  declarations: [HomeComponent , DentalServiceComponent,AboutUsComponent, RegisterComponent ],
   imports: [CommonModule, RouterModule.forChild(routes)],
   providers: [],
   exports: [RouterModule],
