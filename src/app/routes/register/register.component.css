@@ -219,3 +219,66 @@
     font-size: 14px;
     margin-top: 5px;
   }
+
+
+
+
+
+
+@media  screen and (min-width: 1025px) {
+    
+    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+.left-text{
+font-size: 26px;
+}
+.right-text{
+    font-size: 19px;
+}
+.content-apoinment{
+    display: grid;
+}
+.img-apoinment{
+    display: none;
+}
+
+.input-container{
+    margin-left: 0%;
+}
+.input-wrapper1{
+    margin: 10px;
+}
+.button{
+    margin-left: 50px;
+}
+}
+
+
+
+@media screen and (min-width: 376px) and (max-width: 480px) {
+ 
+    .left-text{
+        font-size: 26px;
+        }
+        .right-text{
+            font-size: 19px;
+        }
+        .content-apoinment{
+            display: grid;
+        }
+    .img-apoinment{
+        display: none;
+    }
+    .input-container{
+        margin-left: 0%;
+    }
+    .input-wrapper1{
+        margin: 10px;
+    }
+    .button{
+        margin-left: 50px;
+    }
+}
