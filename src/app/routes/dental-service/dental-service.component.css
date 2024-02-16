@@ -37,3 +37,115 @@
     display: flex;
    justify-content: space-between;
 }
+
+.provide{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.title-img{
+    font-size: 41px;
+}
+.text{
+    margin-top: 50px;
+    padding-left: 170px; 
+}
+
+.points {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+  
+  .item {
+    flex-basis: calc(50% - 10px); 
+  
+  }
+  
+
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item img {
+  
+  
+    margin-right: 10px;
+  }
+  
+  .w-p{
+    margin-top: 60px;
+  }
+  .title-offer{
+    color: #777777;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .left-text {
+   font-size: 40px;
+  }
+  
+  .right-text {
+  font-size: 40px;
+  }
+  
+
+
+  .container-card {
+    display: flex;
+  flex-wrap: wrap; /* Permite que las filas se envuelvan a la siguiente línea */
+  justify-content: space-between; /* Distribuye uniformemente las filas */
+  }
+  
+  .row{
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Añade espacio entre las filas */
+  }
+  
+  .card-special {
+    width: calc(33.33% - 20px);
+  text-align: center;
+  margin-bottom: 0; /* Elimina el margen inferior de las tarjetas */
+  padding: 20px;
+  border: 1px solid #dadcdf;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  margin: 20px;
+  }
+  
+  .card-special img {
+    width: 30%; /* Ancho máximo para la imagen */
+    height: auto; /* Altura automática */
+  }
+  
+  .card-special h2 {
+    margin-top: 10px; /* Espacio arriba del título */
+    font-weight: 400;
+  }
+  
+  .card-special p {
+    margin-top: 5px; 
+    color: #777777;
+  }
+  
+  .ys{
+    font-size: 40px;
+  }
+  .text-smile{
+color: white;
+font-weight: 300;
+  }
+  .your-smile{
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto dentro del contenedor */
+  }
