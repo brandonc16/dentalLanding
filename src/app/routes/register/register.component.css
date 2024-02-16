@@ -17,123 +17,123 @@
   }
   .content-apoinment{
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
   .form-apoinment {
-    margin: 0 auto; /* Centrar horizontalmente */
+    margin: 0 auto; 
   }
   
   .row {
-    display: flex; /* Utiliza flexbox para organizar los inputs */
-    margin-bottom: 10px; /* Espacio entre las filas */
+    display: flex;
+    margin-bottom: 10px; 
   }
   
   .input-wrapper {
-    flex: 1; /* Distribuye el espacio disponible entre los inputs */
-    margin: 16px; /* Espacio entre los inputs */
+    flex: 1; 
+    margin: 16px;
   }
   
   .styled-input {
     margin-top: 10px;
-    width: 100%; /* Ancho completo */
-    height: 30px; /* Altura del input */
-    padding: 5px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del input */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    color: #333; /* Color del texto */
-    background-color: #fff; /* Color de fondo */
+    width: 100%;
+    height: 30px; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    color: #333;
+    background-color: #fff;
   }
   
-  /* Cambia el estilo cuando el input está enfocado */
+
   .styled-input:focus {
-    outline: none; /* Elimina el borde de enfoque */
-    border-color: #007bff; /* Cambia el color del borde */
+    outline: none; 
+    border-color: #007bff; 
   }
   
   .confirm {
-    width: 100%; /* Ancho completo */
-    padding: 10px; /* Espaciado interno del botón */
-    border: none; /* Elimina el borde */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #516eff; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    width: 100%; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #516eff;
+    color: #fff; 
+    font-size: 16px; 
+    cursor: pointer; 
   }
   
   .confirm:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar sobre el botón */
+    background-color: #0056b3;
   }
   
   .styled-inputt {
-    width: 107%; /* Ancho completo */
-    height: 42px; /* Altura del input */
-    padding: 5px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde del input */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    color: #333; /* Color del texto */
-    background-color: #fff; /* Color de fondo */
+    width: 107%; 
+    height: 42px; 
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 16px; 
+    color: #333; 
+    background-color: #fff; 
     margin-top: 10px;
   }
   
-  /* Cambia el estilo cuando el input está enfocado */
+  
   .styled-inputt:focus {
-    outline: none; /* Elimina el borde de enfoque */
-    border-color: #516eff; /* Cambia el color del borde */
+    outline: none; 
+    border-color: #516eff; 
   }
   
   .message{
     margin-top: 10px;
-    width: 102%; /* Ancho completo */
-    border: 1px solid #ccc; /* Borde del input */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    color: #333; /* Color del texto */
-    background-color: #fff; /* Color de fondo */
+    width: 102%;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333; 
+    background-color: #fff; 
     margin-bottom: 30px;
   }
   label{
     margin-bottom: 20px;
     color: #18181b !important;
   }
-/* Estilo para el contenedor del checkbox */
+
 .checkbox-container {
     display: block;
     position: relative;
-    padding-left: 25px; /* Ajusta el espacio a la izquierda del texto */
-    margin-bottom: 12px; /* Espacio entre cada checkbox */
+    padding-left: 25px;
+    margin-bottom: 12px; 
     cursor: pointer;
     font-size: 16px;
   }
   
-  /* Estilo para el checkbox */
+
   .checkbox-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
   
-  /* Estilo para el checkmark (indicador visual del checkbox) */
+  
   .checkmark {
     position: absolute;
     top: 0;
-    left: 0; /* Posición a la izquierda del contenedor */
+    left: 0; 
     height: 15px;
     width: 15px;
     background-color: #eee;
     border-radius: 3px;
   }
   
-  /* Estilo del checkmark cuando el checkbox está marcado */
+
   .checkbox-container input:checked ~ .checkmark {
-    background-color: #516eff; /* Cambia el color del checkmark cuando el checkbox está marcado */
+    background-color: #516eff; 
   }
   
-  /* Estilo del checkmark cuando el mouse pasa sobre el texto */
+
   .checkbox-container:hover input ~ .checkmark {
-    background-color: #ccc; /* Cambia el color del checkmark cuando el mouse pasa sobre el texto */
+    background-color: #ccc; 
   }
 
 
@@ -144,6 +144,7 @@
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
   }
   
   .title {

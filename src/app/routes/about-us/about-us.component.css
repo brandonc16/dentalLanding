@@ -51,9 +51,9 @@
 margin-right: 40px;
 }
 .line {
-    border: none; /* Elimina el borde por defecto */
-    height: 1px; /* Altura de la línea */
-    background-color: #7d92ff; /* Color de la línea */
+    border: none; 
+    height: 1px; 
+    background-color: #7d92ff; 
   }
 
   .content-text{
