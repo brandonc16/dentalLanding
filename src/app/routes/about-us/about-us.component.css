@@ -1,6 +1,7 @@
 .titles {
     display: flex;
     justify-content: space-between; 
+    margin-bottom: 60px;
   }
   
   .left-text {
@@ -68,3 +69,97 @@ margin-right: 40px;
     font-size: 35px;
     font-weight: 300;
   }
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .doctors {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .card img {
+    width: 80%; 
+    filter: grayscale(100%);
+  }
+  
+  .card-body {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel-container {
+    position: relative; 
+    margin-bottom: 90px;
+  }
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+    
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 8    0%;
+    height: auto;
+    border-radius: 100%;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  .card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #516eff;
+   
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #3d56d2;
+    color: white;
+  }
+  

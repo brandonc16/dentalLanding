@@ -36,10 +36,7 @@ export class RegisterComponent {
   getDetailDoctor(){
     this.requestForm.doctorsInfoService().subscribe(
       (resp:any)=>{
-       this.doctors =resp.list
-       console.log(this.doctors,'dfdfsdfsdf');
-       
-        
+       this.doctors =resp.list;
       })
   }
 

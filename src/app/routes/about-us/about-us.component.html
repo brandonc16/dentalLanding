@@ -22,7 +22,28 @@
         <p class="left-text"> Meet Some of Our <br> <a class="history">Brains</a> </p>
         <p class="right-text">MEET OUR <a class="dental">DOCTORS</a></p>
       </div>
-      <div class="doctors"></div>
+      
+      <div class="carousel-container">
+        <div class="carousel" #carousel>
+          <div class="doctors">
+           
+            <div class="card" *ngFor="let card of doctors">
+              <img  [src]="card.photo ? card.photo : 'assets/user.jpg'" alt="No Image">
+              <div class="card-body">
+                <h2>{{ card.name }}</h2>
+                <p>{{ card.specialty }}</p>
+                <p>{{ card.university }}</p>
+                <button>Appointment</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <button class="prev" (click)="scroll(-1)">Prev</button>
+    <button class="next" (click)="scroll(1)">Next</button>
+      </div>
+      
+      
+      
 </div>
 
 <div class="service">
