@@ -188,7 +188,8 @@
   }
   
   .button:hover {
-    background-color: #0056b3;
+    background-color: #668bb1;
+    color: white;
   }
   
   .circle {
@@ -213,3 +214,8 @@
     transform: rotate(155deg);
 }
   
+.error-message {
+    color: #972d2d;
+    font-size: 14px;
+    margin-top: 5px;
+  }

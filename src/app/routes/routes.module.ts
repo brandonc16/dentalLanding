@@ -6,6 +6,8 @@ import { routes } from './routes';
 
 
 
+
+
 @NgModule({
   declarations: [
   
@@ -13,6 +15,6 @@ import { routes } from './routes';
   imports: [
     CommonModule,
     RouterModule.forRoot(routes)],
-    exports: [RouterModule],
+    exports: [RouterModule, ],
 })
 export class RoutesModule { }

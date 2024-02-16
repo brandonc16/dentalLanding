@@ -10,66 +10,87 @@
             <img src="assets/apoinment.png" alt="">
         </div>
         <div class="form-apoinment">
-            <form>
-              <div class="row">
-                <div class="input-wrapper">
-                  <label for="name">Name</label> 
-                  <input type="text" id="name" class="styled-input" placeholder="Full Name">
+                <form [formGroup]="formApoinment">
+                <div class="row">
+                    <div class="input-wrapper">
+                    <label for="name">Name</label> 
+                    <input type="text" id="name" class="styled-input" placeholder="Full Name" formControlName="nombre">
+                    <div *ngIf="formApoinment.get('nombre')?.invalid && (formApoinment.get('nombre')?.dirty || formApoinment.get('nombre')?.touched)" class="error-message">
+                        Invalid name
+                    </div>
+                    </div>
+                    <div class="input-wrapper">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="telefono" class="styled-input" placeholder="(555) 000-0000" formControlName="telefono">
+                    <div *ngIf="formApoinment.get('telefono')?.invalid && (formApoinment.get('telefono')?.dirty || formApoinment.get('telefono')?.touched)" class="error-message">
+                        Invalid phone
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-wrapper">
+                        <label for="date">Date</label>
+                    <input type="date" class="styled-input" formControlName="fecha">
+                    <div *ngIf="formApoinment.get('fecha')?.invalid && (formApoinment.get('fecha')?.dirty || formApoinment.get('fecha')?.touched)" class="error-message">
+                        Invalid date
+                    </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="doctor">Doctor</label>
+                        <select id="doctor" class="styled-inputt" formControlName="doctor">
+                        <option *ngFor="let doctor of doctors" [value]="doctor.name">{{ doctor.name }}</option>
+                        </select>
+                        <div *ngIf="formApoinment.get('doctor')?.invalid && (formApoinment.get('doctor')?.dirty || formApoinment.get('doctor')?.touched)" class="error-message">
+                        Select a doctor
+                        </div>
+                        
+                    </div>
                 </div>
                 <div class="input-wrapper">
-                  <label for="phone">Phone</label>
-                  <input type="tel" id="phone" class="styled-input" placeholder="(555) 000-0000">
+                    <label  for="message">Message</label>
+                    <div *ngIf="formApoinment.get('mensaje')?.invalid && (formApoinment.get('mensaje')?.dirty || formApoinment.get('mensaje')?.touched)" class="error-message">
+                    Select a doctor
+                    </div>
+                <textarea class="message" cols="20" rows="10"  formControlName="mensaje"></textarea>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    You agree to our friendly privacy policy
+                </label>
+                
+                
+                
                 </div>
-              </div>
-              
-              <div class="row">
-                <div class="input-wrapper">
-                    <label for="date">Date</label>
-                  <input type="date" class="styled-input" placeholder="Input 3">
-                </div>
-                <div class="input-wrapper">
-                    <label for="doctor">Doctor</label>
-                    <select id="cars" class="styled-inputt">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select>
-                      
-                </div>
-              </div>
-              <div class="input-wrapper">
-                <label  for="message">Message</label>
-              <textarea class="message" cols="20" rows="10" ></textarea>
-
-              <label class="checkbox-container">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-                You agree to our friendly privacy policy
-              </label>
-              
-              
-              
-              </div>
-              <button class="confirm">Confirm Appoinment</button>
-            </form>
+                <button class="confirm" [disabled]="formApoinment.invalid" (click)="submitApoinment()">Confirm Appoinment</button>
+                </form>
           </div>
           
       </div>
 
       <div class="card">
-        <div class="circle circle1"></div> <!-- Agrega el primer círculo -->
-        <div class="circle circle2"></div> <!-- Agrega el segundo círculo -->
+        <div class="circle circle1"></div> 
+        <div class="circle circle2"></div> 
         <h1 class="title">Subscribe to our newsletter</h1>
         <div class="input-container">
-          <div class="input-wrapper1">
-            <input type="text" class="input" placeholder="First Name">
+            <form [formGroup]="letterform" >
+              <div class="input-wrapper1">
+                  <div *ngIf="letterform.get('nombre')?.invalid && (letterform.get('nombre')?.dirty || letterform.get('nombre')?.touched)" class="error-message">
+                    Invalid name
+                  </div>
+                <input type="text" class="input" placeholder="First Name" formControlName="nombre">
+              </div>
+              <div class="input-wrapper1">
+                  <div *ngIf="letterform.get('correo')?.invalid && (letterform.get('correo')?.dirty || letterform.get('correo')?.touched)" class="error-message">
+                    Invalid email
+                  </div>
+                <input type="email" class="input" placeholder="Email Adress" formControlName="correo">
+              </div>
+          
+              <button type="submit" class="button" [disabled]="letterform.invalid" (click)="subbmitForm()">Subscribe Now</button>
+            </form>
           </div>
-          <div class="input-wrapper1">
-            <input type="email" class="input" placeholder="Email Adress">
-          </div>
-          <button class="button">Subscribe Now</button>
-        </div>
+          
       </div>
       
       
